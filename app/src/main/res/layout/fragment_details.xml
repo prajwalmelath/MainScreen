@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".Details">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/appl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Appliance"
+        android:textSize="30sp"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Power"
+        android:text="Temperature"
+        android:layout_gravity="left"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fire"
+        android:text="Relative Humidity"
+        android:layout_gravity="left"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tUpp"
+        android:text="Upper Limit:"
+        android:textSize="15dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tLow"
+        android:text="LowerLimit"
+        android:textSize="15dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rUpp"
+        android:text="Upper Limit"
+        android:textSize="15dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rLow"
+        android:textSize="15dp"
+        android:text="Lower Limit"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="495dp"/>
+
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_upper_limit"
+        android:hint="upper limit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"/>
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_lower_limit"
+        android:hint="lower limit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"/>
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/r_upper_limit"
+        android:hint="upper limit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="390dp"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/r_lower_limit"
+        android:hint="lower limit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="480dp"/>
+
+    <Button
+        android:id="@+id/nxtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="320dp"
+        android:text="Next" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:text="Enable"
+        android:textSize="15dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Enable"
+        android:textSize="15dp"
+        android:layout_marginTop="350dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="175dp"
+        android:layout_marginRight="5dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/degf"
+            android:text="Degree F"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/degc"
+            android:text="Degree C"/>
+    </RadioGroup>
+
+
+</FrameLayout>
